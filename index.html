@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portafolio | Integración Crítica de IA - Colegio INELPRES</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #2563eb;
+            --accent: #0ea5e9;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --card: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+        header h1 { margin: 0 0 0.5rem 0; font-size: 2.2rem; }
+        header p { margin: 0.3rem 0; opacity: 0.9; font-size: 1.1rem; }
+        nav {
+            background: #0f172a;
+            padding: 0.8rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        nav a:hover { color: var(--accent); }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        section {
+            background: var(--card);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        .grid-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .stat-card {
+            background: #eff6ff;
+            border-left: 4px solid var(--secondary);
+            padding: 1rem;
+            border-radius: 6px;
+        }
+        .stat-card strong { font-size: 1.6rem; color: var(--primary); display: block; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th { background-color: var(--primary); color: white; }
+        tr:nth-child(even) { background-color: #f1f5f9; }
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.6rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            background: #dbeafe;
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        .btn:hover { background: var(--primary); }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #0f172a;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Diagnóstico y Propuesta de Intervención Ética en IA</h1>
+    <p>El impacto de la inteligencia artificial en el pensamiento crítico y la autonomía en grado décimo</p>
+    <p><strong>Investigadores:</strong> Juan Acosta & Nicolás Gómez | <strong>Institución:</strong> Colegio INELPRES (Bogotá, D.C.)</p>
+</header>
+
+<nav>
+    <a href="#diagnostico">1. Diagnóstico</a>
+    <a href="#fundamento">2. Fundamento Teórico</a>
+    <a href="#metodologia">3. Metodología y Cronograma</a>
+    <a href="#recursos">4. Banco de Recursos IA (10)</a>
+    <a href="#evaluacion">5. Evaluación</a>
+</nav>
+
+<div class="container">
+
+    <section id="diagnostico">
+        <h2>1. Diagnóstico de la Comunidad Escolar</h2>
+        <p>A partir de la aplicación de una encuesta diagnóstica a una muestra censal de <strong>20 estudiantes de grado décimo del Colegio INELPRES</strong>, se identifica una población predominantemente nativizada digitalmente —con un 80% que utiliza el <em>smartphone</em> como principal dispositivo de navegación y un primer acceso tecnológico anterior a los 12 años—[cite: 1], cuyos propósitos de uso se concentran en redes sociales (50%) y tareas académicas (40%)[cite: 1, 13, 14, 15]. Aunque plataformas como ChatGPT (65%) y Gemini (25%) son empleadas habitualmente para búsquedas rápidas y elaboración de trabajos[cite: 13, 14, 15], el 85% de los estudiantes reconoce de manera consciente que el uso excesivo de la IA puede disminuir el esfuerzo personal y la reflexión propia[cite: 1, 13, 14, 15]. Asimismo, el diagnóstico revela una marcada vulnerabilidad metodológica: el 85% verifica los resultados de la IA de forma muy escasa[cite: 13, 14, 15], y entre quienes realizan alguna comprobación, el 60% incurre en validación circular (consultando a la misma IA o a otra plataforma) o confía ciegamente al 100%, evidenciando la necesidad urgente de fomentar estrategias de verificación externa y pensamiento crítico frente a la tecnología.</p>
+        
+        <div class="grid-stats">
+            <div class="stat-card"><strong>80%</strong> Navega principalmente desde Smartphone[cite: 1]</div>
+            <div class="stat-card"><strong>85%</strong> Verifica poco o nada los resultados de IA[cite: 13, 14, 15]</div>
+            <div class="stat-card"><strong>60%</strong> Incurre en validación circular entre IAs[cite: 13, 14, 15]</div>
+            <div class="stat-card"><strong>85%</strong> Teme pérdida de esfuerzo y reflexión propia[cite: 1, 13, 14, 15]</div>
+        </div>
+    </section>
+
+    <section id="fundamento">
+        <h2>2. Naturaleza del Proyecto y Referentes Teóricos</h2>
+        <p><strong>Objetivo General:</strong> Diseñar una propuesta pedagógica de integración crítica de la inteligencia artificial orientada al desarrollo de la competencia de verificación de información en estudiantes de grado décimo del Colegio INELPRES, fundamentada en el análisis del diagnóstico institucional y en los marcos del constructivismo y la pedagogía crítica[cite: 3].</p>
+        <ul>
+            <li><strong>Vygotsky, L. S. (1978):</strong> Constructivismo sociocultural; la IA como herramienta de mediación cognitiva (<em>scaffolding</em>) en la Zona de Desarrollo Próximo[cite: 2].</li>
+            <li><strong>Freire, P. (1970):</strong> Pedagogía crítica y emancipación intelectual frente al consumo pasivo o "bancario" de respuestas automatizadas[cite: 2].</li>
+            <li><strong>Jonassen, D. H. (2000):</strong> Uso de tecnologías como herramientas cognitivas (<em>mindtools</em>) que obligan a pensar profundamente[cite: 3].</li>
+            <li><strong>Siemens, G. (2005):</strong> Teoría del conectivismo; aprendizaje en red y capacidad de filtrar y verificar nodos de información[cite: 3].</li>
+            <li><strong>Buckingham, D. (2008):</strong> Alfabetización mediática y digital basada en el escepticismo constructivo frente a contenidos algorítmicos[cite: 2].</li>
+            <li><strong>Selwyn, N. (2019):</strong> Crítica a la "fiebre tecnológica" y advertencia sobre los riesgos de la dependencia algorítmica en las escuelas[cite: 2].</li>
+            <li><strong>Holmes, W., & Cukurova, M. (2022):</strong> Ética de la IA en educación para preservar la agencia humana y evitar la dependencia cognitiva[cite: 3].</li>
+        </ul>
+    </section>
+
+    <section id="metodologia">
+        <h2>3. Metodología Didáctica y Cronograma (8 Semanas)</h2>
+        <p>La propuesta se desarrolla bajo un enfoque de <strong>Aprendizaje Basado en Indagación</strong> y el <strong>Método de Tareas</strong>, articulado en tres talleres formativos y un protocolo de interacción de cinco pasos (<em>Reflexión propia, Consulta guiada, Verificación externa, Redacción propia y Declaración de uso de IA</em>).</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Semana</th>
+                    <th>Fase / Actividad Clave</th>
+                    <th>Responsables</th>
+                    <th>Recursos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Semana 1</td><td>Socialización del diagnóstico institucional y debate sobre dependencia algorítmica.</td><td>Docente e investigadores / Estudiantes</td><td>Presentación Gamma, proyector, datos encuesta.</td></tr>
+                <tr><td>Semana 2</td><td><strong>Taller 1:</strong> Deconstrucción de la IA (detección de sesgos y alucinaciones).</td><td>Docente y Estudiantes</td><td>Guía Taller 1, smartphones/PC, ChatGPT y Gemini.</td></tr>
+                <tr><td>Semana 3</td><td><strong>Taller 2:</strong> Búsqueda de fuentes confiables (Google Académico y repositorios).</td><td>Docente y Estudiantes</td><td>Conectividad, bases de datos académicas, libros.</td></tr>
+                <tr><td>Semana 4</td><td>Aplicación de la <em>Bitácora de Triangulación</em> con al menos 2 fuentes externas.</td><td>Estudiantes (asesoría docente)</td><td>Plantilla Bitácora de Triangulación, bibliografía.</td></tr>
+                <tr><td>Semana 5</td><td>Construcción colaborativa del Protocolo de Verificación Crítica en 5 pasos.</td><td>Docente y Estudiantes</td><td>Infografía del protocolo, mural colaborativo.</td></tr>
+                <tr><td>Semana 6</td><td><strong>Taller 3:</strong> Aplicación del protocolo en tarea escolar con declaración ética.</td><td>Estudiantes de décimo</td><td>Guía Taller 3, Tutor Socrático y Agente API.</td></tr>
+                <tr><td>Semana 7</td><td>Coevaluación entre pares sobre calidad de fuentes y autonomía argumentativa.</td><td>Estudiantes (guía docente)</td><td>Rúbrica analítica de coevaluación.</td></tr>
+                <tr><td>Semana 8</td><td>Evaluación final (post-test) y sistematización del portafolio de evidencias.</td><td>Docente investigador</td><td>Cuestionario de salida, portafolio estudiantil.</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="recursos">
+        <h2>4. Banco de Materiales Educativos Desarrollados con IA (10 Recursos)</h2>
+        <p>Recursos diseñados con diversas plataformas de Inteligencia Artificial para la implementación futura del proyecto en el Colegio INELPRES:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Categoría</th>
+                    <th>Material Educativo</th>
+                    <th>Plataforma IA Utilizada</th>
+                    <th>Enlace / Acceso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td><span class="badge">Planeación Curricular</span></td>
+                    <td>Secuencia Didáctica Integral (8 Semanas)</td>
+                    <td>Claude 3.5 Sonnet</td>
+                    <td><a href="#REEMPLAZAR_LINK_1" class="btn" target="_blank">Ver Recurso</a></td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td><span class="badge">Planeación Curricular</span></td>
+                    <td>Guía Docente: Taller 1 "¿La IA siempre tiene la razón?"</td>
+                    <td>ChatGPT (GPT-4o)</td>
+                    <td><a href="#REEMPLAZAR_LINK_2" class="btn" target="_blank">Ver Recurso</a></td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td><span class="badge">Presentación</span></td>
+                    <td>Presentación Interactiva: Resultados Diagnóstico INELPRES</td>
+                    <td>Gamma.app</td>
+                    <td><a href="#REEMPLAZAR_LINK_3" class="btn" target="_blank">Ver Recurso</a></td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td><span class="badge">Presentación</span></td>
+                    <td>Infografía: Protocolo de Verificación Crítica en 5 Pasos</td>
+                    <td>Canva Magic Design</td>
+                    <td><a href="#REEMPLAZAR_LINK_4" class="btn" target="_blank">Ver Recurso</a></td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td><span class="badge">Presentación</span></td>
+                    <td>Cápsula Audiovisual: ¿Qué son las alucinaciones de la IA?</td>
+                    <td>InVideo AI / HeyGen</td>
+                    <td><a href="#REEMPLAZAR_LINK_5" class="btn" target="_blank">Ver Recurso</a></td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td><span class="badge">Apoyo Aprendizaje</span></td>
+                    <td>Plantilla: Bitácora de Triangulación de Fuentes</td>
+                    <td>Google Gemini / Notion AI</td>
+                    <td><a href="#REEMPLAZAR_LINK_6" class="btn" target="_blank">Ver Recurso</a></td>
+                </tr>
+                <tr>
+                    <td>07</td>
+                    <td><span class="badge">Apoyo Aprendizaje</span></td>
+                    <td>Manual de Prompts Críticos y Fact-Checking</td>
+                    <td>Perplexity AI</td>
+                    <td><a href="#REEMPLAZAR_LINK_7" class="btn" target="_blank">Ver Recurso</a></td>
+                </tr>
+                <tr>
+                    <td>08</td>
+                    <td><span class="badge">Tutor IA</span></td>
+                    <td><strong>Tutor Socrático:</strong> "VerifiBot INELPRES"</td>
+                    <td>Poe / Mizou</td>
+                    <td><a href="#REEMPLAZAR_LINK_TUTOR" class="btn" target="_blank">Interactuar con Tutor</a></td>
+                </tr>
+                <tr>
+                    <td>09</td>
+                    <td><span class="badge">Agente API</span></td>
+                    <td><strong>Agente Pedagógico Inteligente (API):</strong> "Auditor Crítico IA"</td>
+                    <td>Custom GPT / MindStudio</td>
+                    <td><a href="#REEMPLAZAR_LINK_API" class="btn" target="_blank">Interactuar con API</a></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><span class="badge">Evaluación</span></td>
+                    <td>Rúbrica Analítica de Autonomía y Cuestionario Pre/Post</td>
+                    <td>MagicSchool AI</td>
+                    <td><a href="#REEMPLAZAR_LINK_10" class="btn" target="_blank">Ver Recurso</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="evaluacion">
+        <h2>5. Criterios de Evaluación y Seguimiento</h2>
+        <p>El proyecto se valora bajo cuatro criterios fundamentales (escala de cumplimiento: 0%, 50% y 100% con evidencia validada)[cite: 7]:</p>
+        <ul>
+            <li><strong>Coherencia Metodológica y Trazabilidad:</strong> Correspondencia directa entre los hallazgos de las 20 encuestas, los objetivos y los talleres diseñados.</li>
+            <li><strong>Rigor Teórico y Conceptual:</strong> Articulación fundamentada de los 7 referentes bibliográficos con fechas y aportes claros.</li>
+            <li><strong>Viabilidad y Pertinencia Didáctica:</strong> Respuesta efectiva a la brecha de acceso (uso de smartphone)[cite: 1] y a la validación circular mediante herramientas móviles y analógicas[cite: 1].</li>
+            <li><strong>Cumplimiento Documental:</strong> Validación del 100% de los requisitos críticos en la lista de verificación institucional[cite: 7].</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>Proyecto de Integración de IA en Educación — Juan Acosta & Nicolás Gómez | Colegio INELPRES, Bogotá D.C.</p>
+</footer>
+
+</body>
+</html>
