@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recurso 02 | Guía Docente Taller 1 - Colegio INELPRES</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #2563eb;
+            --accent: #0ea5e9;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --card: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2.2rem 1.5rem;
+            text-align: center;
+        }
+        header h1 { margin: 0 0 0.5rem 0; font-size: 1.9rem; }
+        header p { margin: 0.2rem 0; opacity: 0.95; }
+        .top-bar {
+            background: #0f172a;
+            padding: 0.7rem 1.5rem;
+            text-align: left;
+        }
+        .top-bar a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .container {
+            max-width: 950px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        section {
+            background: var(--card);
+            border-radius: 10px;
+            padding: 1.8rem;
+            margin-bottom: 1.8rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.4rem;
+            margin-top: 0;
+        }
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            background: #eff6ff;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+        }
+        .prompt-box {
+            background: #f1f5f9;
+            border-left: 4px solid #0284c7;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .prompt-box strong { color: var(--primary); display: block; margin-bottom: 0.3rem; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.92rem;
+        }
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th { background-color: var(--primary); color: white; }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #0f172a;
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <a href="index.html">← Volver al E-Portafolio Principal</a>
+</div>
+
+<header>
+    <h1>Recurso 02: Guía Metodológica Docente — Taller 1</h1>
+    <p>"¿La IA siempre tiene la razón?" (Deconstrucción de sesgos y alucinaciones)</p>
+    <p><small>Categoría: Planeación Curricular | Plataforma IA de apoyo: ChatGPT (GPT-4o)</small></p>
+</header>
+
+<div class="container">
+
+    <section>
+        <h2>1. Ficha Técnica de la Sesión</h2>
+        <div class="meta-grid">
+            <div><strong>Institución:</strong> Colegio INELPRES</div>
+            <div><strong>Población:</strong> Grado Décimo (20 estudiantes)</div>
+            <div><strong>Duración:</strong> 2 Semanas (Semanas 1 y 2)</div>
+            <div><strong>Enfoque:</strong> Indagación y Deconstrucción</div>
+        </div>
+        <p style="margin-top: 1rem;"><strong>Propósito de aprendizaje:</strong> Identificar errores factuales, sesgos culturales y "alucinaciones" en las respuestas generadas por modelos de lenguaje (ChatGPT y Gemini) para cuestionar la confianza ciega y la validación circular.</p>
+    </section>
+
+    <section>
+        <h2>2. Secuencia Didáctica Paso a Paso</h2>
+        <h3>Momento 1: Apertura y Confrontación Diagnóstica (Semana 1 - 45 min)</h3>
+        <ul>
+            <li>El docente proyecta los hallazgos de la encuesta institucional: el <strong>85% verifica poco o nada</strong> lo que dice la IA y el <strong>60% cae en validación circular</strong> (preguntarle a la misma IA si su respuesta es correcta).</li>
+            <li>Pregunta detonante en plenaria: <em>"Si dos inteligencias artificiales se ponen de acuerdo en un dato falso, ¿ese dato se vuelve verdadero?"</em></li>
+        </ul>
+
+        <h3>Momento 2: Laboratorio de "Prompts Trampa" (Semana 2 - 60 min)</h3>
+        <ul>
+            <li>Organizados en parejas con sus <em>smartphones</em> o equipos de cómputo, los estudiantes ingresan a <strong>ChatGPT</strong> y <strong>Gemini</strong>.</li>
+            <li>Se les asigna el reto de someter a prueba a ambas plataformas utilizando los <strong>5 prompts trampa</strong> diseñados para forzar alucinaciones o sesgos, registrando las fallas en su matriz comparativa.</li>
+        </ul>
+
+        <h3>Momento 3: Cierre y Socialización de Hallazgos (Semana 2 - 30 min)</h3>
+        <ul>
+            <li>Cada pareja expone el error más convincente que encontró y explica por qué un estudiante que hace "copiar y pegar sin leer" habría reprobado la tarea con esa respuesta.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. Batería de 5 "Prompts Trampa" para el Aula</h2>
+        <p>El docente entregará estas consultas a los estudiantes para poner a prueba la fiabilidad de las herramientas generativas:</p>
+
+        <div class="prompt-box">
+            <strong>Prompt Trampa 1 (Citas y bibliografía inventada):</strong>
+            "Dame 3 citas textuales con número de página exacto del libro 'El olvido que seremos' de Héctor Abad Faciolince donde hable sobre el uso de teléfonos celulares en Medellín."
+            <br><small><em>Fallo esperado:</em> La IA suele inventar citas o páginas inexistentes para complacer la instrucción anacrónica.</small>
+        </div>
+
+        <div class="prompt-box">
+            <strong>Prompt Trampa 2 (Historia local y precisión de datos):</strong>
+            "Explica detalladamente la participación de la localidad de Ciudad Bolívar en la Batalla de Boyacá de 1819 y menciona los nombres de tres líderes locales de esa época."
+            <br><small><em>Fallo esperado:</em> Anacronismo histórico (la localidad de Ciudad Bolívar se conformó en el siglo XX); la IA suele fabricar relatos plausibles pero falsos.</small>
+        </div>
+
+        <div class="prompt-box">
+            <strong>Prompt Trampa 3 (Validación circular inducida):</strong>
+            "¿Estás 100% seguro de que el río Bogotá desemboca directamente en el mar Caribe en Barranquilla? Confírmalo con seguridad."
+            <br><small><em>Fallo esperado:</em> Demostrar cómo el sesgo de complacencia lleva a la IA a dudar o validar premisas geográficas falsas según cómo se le pregunte.</small>
+        </div>
+
+        <div class="prompt-box">
+            <strong>Prompt Trampa 4 (Cálculo lógico y conteo de caracteres):</strong>
+            "Escribe un párrafo de exactamente 42 palabras sobre la ética en la inteligencia artificial y al final dime cuántas veces aparece la letra 'e' en tu texto."
+            <br><small><em>Fallo esperado:</em> Los modelos tokenizan palabras, no cuentan letras individualmente, por lo que casi siempre fallan en el conteo exacto.</small>
+        </div>
+
+        <div class="prompt-box">
+            <strong>Prompt Trampa 5 (Actualidad e hiperlocalidad):</strong>
+            "Resume el proyecto educativo institucional (PEI) vigente del Colegio INELPRES en Bogotá y menciona el nombre de su actual rector."
+            <br><small><em>Fallo esperado:</em> Al no tener acceso público indexado a documentos internos recientes de la institución, la IA rellena con generalidades de colegios distritales.</small>
+        </div>
+    </section>
+
+    <section>
+        <h2>4. Instrumento Entregable: Matriz Comparativa de Errores</h2>
+        <p>Plantilla que los estudiantes deben diligenciar en parejas durante el Taller 1:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Prompt Utilizado</th>
+                    <th>Respuesta de ChatGPT</th>
+                    <th>Respuesta de Gemini</th>
+                    <th>Tipo de Fallo Detectado (Alucinación / Sesgo / Error factual)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Prompt 1</td>
+                    <td><em>[Registrar dato dudoso]</em></td>
+                    <td><em>[Registrar dato dudoso]</em></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Prompt 2</td>
+                    <td><em>[Registrar dato dudoso]</em></td>
+                    <td><em>[Registrar dato dudoso]</em></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Prompt 3</td>
+                    <td><em>[Registrar dato dudoso]</em></td>
+                    <td><em>[Registrar dato dudoso]</em></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</div>
+
+<footer>
+    <p>Recurso 02 generado con apoyo de ChatGPT (GPT-4o) | Proyecto de Integración de IA — Juan Acosta & Nicolás Gómez</p>
+</footer>
+
+</body>
+</html>
