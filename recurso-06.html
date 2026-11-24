@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recurso 06 | Bitácora de Triangulación de Fuentes - Colegio INELPRES</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #2563eb;
+            --accent: #0ea5e9;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --card: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+        header h1 { margin: 0 0 0.4rem 0; font-size: 1.85rem; }
+        header p { margin: 0.2rem 0; opacity: 0.95; }
+        .top-bar {
+            background: #0f172a;
+            padding: 0.7rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-bar a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .print-btn {
+            background: #10b981;
+            color: white;
+            border: none;
+            padding: 0.45rem 0.9rem;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+        .print-btn:hover { background: #059669; }
+        .container {
+            max-width: 1050px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        section {
+            background: var(--card);
+            border-radius: 10px;
+            padding: 1.8rem;
+            margin-bottom: 1.8rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.4rem;
+            margin-top: 0;
+        }
+        .student-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            background: #f1f5f9;
+            padding: 1rem;
+            border-radius: 6px;
+            border: 1px solid #cbd5e1;
+        }
+        .alert-rule {
+            background: #fef3c7;
+            border-left: 4px solid #d97706;
+            padding: 0.9rem 1rem;
+            margin: 1rem 0;
+            border-radius: 0 6px 6px 0;
+            font-size: 0.95rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.88rem;
+        }
+        th, td {
+            border: 1px solid #94a3b8;
+            padding: 0.7rem;
+            text-align: left;
+            vertical-align: top;
+        }
+        th { background-color: var(--primary); color: white; }
+        .declaration-box {
+            border: 2px dashed var(--secondary);
+            background: #eff6ff;
+            padding: 1.2rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #0f172a;
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+        @media print {
+            .top-bar, footer { display: none; }
+            body { background: white; }
+            section { box-shadow: none; border: 1px solid #cbd5e1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <a href="index.html">← Volver al E-Portafolio Principal</a>
+    <button class="print-btn" onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+</div>
+
+<header>
+    <h1>Recurso 06: Bitácora de Triangulación de Fuentes</h1>
+    <p>Instrumento de Verificación Externa y Prevención de Validación Circular — Grado Décimo</p>
+    <p><small>Categoría: Apoyo al Aprendizaje | Plataforma IA de apoyo: Google Gemini</small></p>
+</header>
+
+<div class="container">
+
+    <section>
+        <h2>1. Datos de Identificación del Estudiante</h2>
+        <div class="student-info">
+            <div><strong>Estudiante:</strong> ___________________________</div>
+            <div><strong>Curso:</strong> 10° ____ &nbsp;&nbsp; <strong>Fecha:</strong> ____/____/2026</div>
+            <div><strong>Asignatura / Tema:</strong> _______________________</div>
+            <div><strong>IA Consultada:</strong> [ ] ChatGPT &nbsp; [ ] Gemini &nbsp; [ ] Otra</div>
+        </div>
+
+        <div class="alert-rule">
+            <strong>Regla de Oro contra la Validación Circular:</strong> Está estrictamente prohibido usar otra Inteligencia Artificial (como preguntarle a Gemini si ChatGPT tiene la razón) para llenar las columnas de fuentes externas. Todas las verificaciones deben provenir de <strong>Google Académico, Redalyc, SciELO, portales institucionales verificados o libros físicos</strong>.
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Matriz de Triangulación y Fact-Checking</h2>
+        <p>Selecciona al menos <strong>tres (3) afirmaciones, datos, fechas o conceptos clave</strong> entregados por la IA en tu consulta inicial y contrástalos antes de redactar tu trabajo:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 6%;">#</th>
+                    <th style="width: 22%;">Afirmación o dato entregado por la IA</th>
+                    <th style="width: 23%;">Fuente Externa Independiente #1 (Cita / Enlace / Libro)</th>
+                    <th style="width: 23%;">Fuente Externa Independiente #2 (Cita / Enlace / Libro)</th>
+                    <th style="width: 26%;">Veredicto de Veracidad y Justificación Propia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background: #f8fafc;">
+                    <td><em>Ej.</em></td>
+                    <td><em>"La localidad de Ciudad Bolívar fue fundada en 1819 tras la Batalla de Boyacá."</em></td>
+                    <td><em>Alcaldía Mayor de Bogotá (2023). Historia de la Localidad 19: asentamientos iniciaron en la década de 1940.</em></td>
+                    <td><em>Archivo de Bogotá (2021). Reseña histórica de parcelaciones del sur de Bogotá en el siglo XX.</em></td>
+                    <td><strong>[X] Falso / Alucinación</strong><br><em>Justificación:</em> La IA cometió un anacronismo histórico; el dato real corresponde al siglo XX.</td>
+                </tr>
+                <tr style="height: 110px;">
+                    <td><strong>1</strong></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>[ ] Confirmado<br>[ ] Parcialmente cierto<br>[ ] Falso / Alucinación<br><em>Por qué:</em></td>
+                </tr>
+                <tr style="height: 110px;">
+                    <td><strong>2</strong></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>[ ] Confirmado<br>[ ] Parcialmente cierto<br>[ ] Falso / Alucinación<br><em>Por qué:</em></td>
+                </tr>
+                <tr style="height: 110px;">
+                    <td><strong>3</strong></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>[ ] Confirmado<br>[ ] Parcialmente cierto<br>[ ] Falso / Alucinación<br><em>Por qué:</em></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>3. Declaración Ética de Uso de Inteligencia Artificial (Paso 5 del Protocolo)</h2>
+        <p>Completa este bloque e inclúyelo al final de tu entrega académica:</p>
+        <div class="declaration-box">
+            <p><em>"Para la elaboración de este trabajo utilicé la herramienta de Inteligencia Artificial ______________________ exclusivamente con el propósito de ______________________________________________________. Todos los datos factuales, conceptos y referencias fueron verificados de manera independiente mediante fuentes académicas reales registradas en esta bitácora, y la redacción final corresponde a mi autoría y reflexión propia."</em></p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>Recurso 06 generado con apoyo de Google Gemini | Proyecto de Integración de IA — Juan Acosta & Nicolás Gómez</p>
+</footer>
+
+</body>
+</html>
