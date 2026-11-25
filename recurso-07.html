@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recurso 07 | Manual de Prompts Críticos - Colegio INELPRES</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #2563eb;
+            --accent: #0ea5e9;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --card: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2.2rem 1.5rem;
+            text-align: center;
+        }
+        header h1 { margin: 0 0 0.5rem 0; font-size: 1.9rem; }
+        header p { margin: 0.2rem 0; opacity: 0.95; }
+        .top-bar {
+            background: #0f172a;
+            padding: 0.7rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-bar a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .ext-btn {
+            background: #0ea5e9;
+            color: #0f172a !important;
+            padding: 0.35rem 0.8rem;
+            border-radius: 5px;
+            font-size: 0.85rem !important;
+        }
+        .container {
+            max-width: 980px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        section {
+            background: var(--card);
+            border-radius: 10px;
+            padding: 1.8rem;
+            margin-bottom: 1.8rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.4rem;
+            margin-top: 0;
+        }
+        .prompt-card {
+            background: #f1f5f9;
+            border-left: 4px solid var(--secondary);
+            padding: 1rem 1.2rem;
+            margin-bottom: 1rem;
+            border-radius: 0 8px 8px 0;
+        }
+        .prompt-card strong {
+            color: var(--primary);
+            display: block;
+            margin-bottom: 0.4rem;
+            font-size: 0.98rem;
+        }
+        .prompt-text {
+            font-family: 'Consolas', 'Courier New', monospace;
+            background: #ffffff;
+            padding: 0.75rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+        .copy-btn {
+            background: var(--secondary);
+            color: white;
+            border: none;
+            padding: 0.35rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .copy-btn:hover { background: var(--primary); }
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .tip-item {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .tip-item h4 { margin: 0 0 0.4rem 0; color: var(--primary); }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #0f172a;
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <a href="index.html">← Volver al E-Portafolio Principal</a>
+    <a href="https://www.perplexity.ai/session/e3581ded-b522-45e4-97ca-4e7ec1e9e1a0" class="ext-btn" target="_blank">🔗 Ver Hilo Original en Perplexity AI</a>
+</div>
+
+<header>
+    <h1>Recurso 07: Manual de Prompts Críticos y Fact-Checking</h1>
+    <p>Guía práctica de bolsillo para cuestionar a la IA y rastrear fuentes reales</p>
+    <p><small>Categoría: Apoyo al Aprendizaje | Plataforma IA de apoyo: Perplexity AI</small></p>
+</header>
+
+<div class="container">
+
+    <section>
+        <h2>1. Prompts de Andamiaje (Sin que la IA Haga la Tarea)</h2>
+        <div class="prompt-card">
+            <strong>1.1. Solicitar estructura y preguntas guía:</strong>
+            <div class="prompt-text" id="p1">"Estoy investigando sobre [TEMA] para grado décimo. No escribas el texto por mí; dame únicamente un esquema de 4 subtemas clave que debería investigar por mi cuenta y 3 preguntas guía para orientar mi lectura."</div>
+            <button class="copy-btn" onclick="copiarPrompt('p1', this)">📋 Copiar Prompt</button>
+        </div>
+        <div class="prompt-card">
+            <strong>1.2. Explicación escalonada y detección de errores comunes:</strong>
+            <div class="prompt-text" id="p2">"Explícame el concepto de [CONCEPTO] en tres niveles: primero de forma sencilla, segundo con rigor de bachillerato, y tercero dime cuál es el error más frecuente que cometen los estudiantes al interpretarlo."</div>
+            <button class="copy-btn" onclick="copiarPrompt('p2', this)">📋 Copiar Prompt</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Prompts de Auditoría y Fact-Checking (Para Perplexity AI)</h2>
+        <div class="prompt-card">
+            <strong>2.1. Rastreo exclusivo de fuentes académicas verificables:</strong>
+            <div class="prompt-text" id="p3">"Busca artículos académicos o institucionales reales publicados en los últimos 5 años sobre [TEMA] en Colombia. Proporciona autor, año, título exacto y enlace verificable. Si no encuentras fuentes reales indexadas, responde 'No encontré fuentes verificables' y no inventes referencias."</div>
+            <button class="copy-btn" onclick="copiarPrompt('p3', this)">📋 Copiar Prompt</button>
+        </div>
+        <div class="prompt-card">
+            <strong>2.2. Clasificación de hechos vs. datos que requieren verificación:</strong>
+            <div class="prompt-text" id="p4">"Sobre tu respuesta anterior acerca de [TEMA], separa tus afirmaciones en dos listas: (A) hechos ampliamente consensuados, y (B) cifras, fechas o citas específicas que debo contrastar obligatoriamente en Google Académico."</div>
+            <button class="copy-btn" onclick="copiarPrompt('p4', this)">📋 Copiar Prompt</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Prompts para Detectar Sesgos y Contraargumentar</h2>
+        <div class="prompt-card">
+            <strong>3.1. Abogado del diablo (contraargumentación crítica):</strong>
+            <div class="prompt-text" id="p5">"Mi postura inicial sobre [TEMA] es [TU IDEA]. Actúa como un evaluador crítico y presenta los 3 argumentos más sólidos en contra de mi postura para que yo pueda fortalecer mi ensayo."</div>
+            <button class="copy-btn" onclick="copiarPrompt('p5', this)">📋 Copiar Prompt</button>
+        </div>
+        <div class="prompt-card">
+            <strong>3.2. Revisión de sesgo contextual y local:</strong>
+            <div class="prompt-text" id="p6">"Analiza tu explicación anterior sobre [TEMA] e indica si está enfocada únicamente desde una mirada norteamericana o europea. ¿Qué autores, normativas o realidades de Colombia quedaron por fuera?"</div>
+            <button class="copy-btn" onclick="copiarPrompt('p6', this)">📋 Copiar Prompt</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>4. Operadores de Búsqueda para Fuentes Reales (Cero Validación Circular)</h2>
+        <div class="tips-grid">
+            <div class="tip-item">
+                <h4>1. Comillas exactas (" ")</h4>
+                <p>Busca <code>"pensamiento crítico" "inteligencia artificial"</code> en Google Académico para filtrar resultados exactos.</p>
+            </div>
+            <div class="tip-item">
+                <h4>2. Solo documentos PDF</h4>
+                <p>Añade <code>filetype:pdf</code> al final de tu consulta para localizar tesis, informes y artículos académicos completos.</p>
+            </div>
+            <div class="tip-item">
+                <h4>3. Dominios educativos/oficiales</h4>
+                <p>Usa <code>site:.edu.co</code> o <code>site:.gov.co</code> para restringir la búsqueda a universidades y entidades de Colombia.</p>
+            </div>
+            <div class="tip-item">
+                <h4>4. Repositorios abiertos</h4>
+                <p>Contrasta siempre en <strong>Redalyc</strong>, <strong>SciELO</strong> o libros físicos antes de dar por válido un dato de IA.</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>Recurso 08 generado con apoyo de Perplexity AI | Proyecto de Integración de IA — Juan Acosta & Nicolás Gómez</p>
+</footer>
+
+<script>
+    function copiarPrompt(idElemento, boton) {
+        const texto = document.getElementById(idElemento).innerText;
+        navigator.clipboard.writeText(texto).then(() => {
+            const textoOriginal = boton.innerText;
+            boton.innerText = "✅ ¡Copiado!";
+            boton.style.background = "#059669";
+            setTimeout(() => {
+                boton.innerText = textoOriginal;
+                boton.style.background = "";
+            }, 2000);
+        });
+    }
+</script>
+
+</body>
+</html>
